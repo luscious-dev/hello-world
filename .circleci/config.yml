@@ -19,7 +19,7 @@ jobs:
           command: "echo Hello, World!"
 
   print-hello:
-    parameter:
+    parameters:
       your_name:
         type: string
         default: no name
