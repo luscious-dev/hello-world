@@ -31,9 +31,9 @@ jobs:
     steps:
       - checkout
       - run:
-          name: Say hello << your_name >>
+          name: Say hello << parameters.your_name >>
           command: |
-            echo hello << your_name >>
+            echo hello << parameters.your_name >>
 
   print-world:
     docker:
