@@ -19,14 +19,21 @@ jobs:
           command: "echo Hello, World!"
 
   print-hello:
+    parameter:
+      your_name:
+        type: string
+        default: no name
+      your_sex:
+        type: string
+        default: no gender
     docker: 
       - image: circleci/node:13.8.0
     steps:
       - checkout
       - run:
-          name: Say hello
+          name: Say hello << your_name >>
           command: |
-            echo hello
+            echo hello << your_name >>
 
   print-world:
     docker:
