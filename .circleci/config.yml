@@ -22,10 +22,10 @@ jobs:
     parameters:
       your_name:
         type: string
-        default: no name
+        default: no_name
       your_sex:
         type: string
-        default: no gender
+        default: no_gender
     docker: 
       - image: circleci/node:13.8.0
     steps:
