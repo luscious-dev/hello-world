@@ -22,10 +22,10 @@ jobs:
     parameters:
       your_name:
         type: string
-        default: no_name
+        default: no name
       your_sex:
         type: string
-        default: no_gender
+        default: no gender
     docker: 
       - image: circleci/node:13.8.0
     steps:
@@ -51,7 +51,7 @@ workflows:
   say-hello-workflow:
     jobs:
       - print-hello:
-        your_name: Olawale
-        your_sex: male
+          your_name: Olawale
+          your_sex: male
       - print-world:
           requires: [print-hello]
